@@ -4,15 +4,16 @@
   - [File structure](#file-structure)
   - [Extensions](#extensions)
   - [Other Requirements](#other-requirements)
+  - [GUI](#GUI)
   - [Developed by](#developed-by)
 
 ## File structure
 
-> 1. File dialog box and **GUI**
->
-> 2. **Image** reading & processing
->
-> 3. Writing & updating **Excel** file
+- [x] File dialog box and **GUI**
+
+- [ ] **Image OCR** & processing
+
+- [ ] Writing & updating **Excel** file
 
 ---
 
@@ -42,13 +43,24 @@ Make sure you have the following extension installed
 
 ---
 
+## GUI
+
+Here is a preview.
+
+Using **Tkinter** we have created a simple _GUI_ window.
+
+<Details> 
+
+![Image](ocr.gif)
+
+</Details>
+
+---
 ## Developed by
 
-- Shivansh Karan
+- [Shivansh Karan](@shivanshkaran)
 - Varun S Duddu
 - Vishal S Hegde
-
-Written in : `python` ( 100 % )
 
 © HMR INTERNATIONAL SCHOOL
 
