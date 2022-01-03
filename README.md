@@ -58,7 +58,7 @@ Using **Tkinter** we have created a simple _GUI_ window.
 ---
 ## Developed by
 
-- [Shivansh Karan](https://github.com/shivanshkaran/)
+- [Shivansh Karan](https://github.com/SpaceTesla/)
 - Varun S Duddu
 - Vishal S Hegde
 
