@@ -156,8 +156,8 @@ frame2.pack(padx=5, pady=5)
 ## Help function
 
 def help_fun():         # To be used with @help_btn below
-    webbrowser.open_new_tab("https://github.com/SpaceTesla/attendance-management-using-image-processing")   # TODO: add a better help browser
-
+    github_link = "https://github.com/SpaceTesla/attendance-management-using-image-processing"
+    webbrowser.open_new_tab(github_link)
 ## Help button
 
 help_btn = Button(frame2, text="Help", command= help_fun)
