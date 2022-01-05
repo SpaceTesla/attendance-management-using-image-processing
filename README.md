@@ -50,7 +50,9 @@ Here is a preview.
 Using **Tkinter** we have created a simple _GUI_ window.
 
 <Details> 
-
+<Summary> GUI window </Summary>
+  
+  
 ![Image](ocr.gif)
 
 </Details>
