@@ -4,16 +4,16 @@
   - [File structure](#file-structure)
   - [Extensions](#extensions)
   - [Other Requirements](#other-requirements)
-  - [GUI](#GUI)
+  - [GUI](#gui)
   - [Developed by](#developed-by)
 
 ## File structure
 
-- [x] File dialog box and **GUI**
+- [x] File dialog box and **GUI** _@SpaceTesla_
 
-- [ ] **Image OCR** & processing
+- [ ] **Image OCR** & processing  _@zeta-bot_
 
-- [ ] Writing & updating **Excel** file @penguinacorn
+- [ ] Writing & updating **Excel** file _@penguinacorn_
 
 ---
 
@@ -47,9 +47,10 @@ Make sure you have the following extension installed
 
 Here is a preview.
 
-Using **Tkinter** we have created a simple _GUI_ window.
+Using **Tkinter library** we have created a simple _GUI_ window.
 
-<Details> 
+
+<Details>  <!-- This will create a simple dropdown kind of thing -->
 <Summary> GUI window </Summary>
   
   
@@ -61,8 +62,8 @@ Using **Tkinter** we have created a simple _GUI_ window.
 ## Developed by
 
 - [Shivansh Karan](https://github.com/SpaceTesla/)
-- Varun S Duddu
-- Vishal S Hegde
+- [Varun S Duddu](https://github.com/penguinacorn/)
+- [Vishal S Hegde](https://github.com/zeta-bot/)
 
 © HMR INTERNATIONAL SCHOOL
 
