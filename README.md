@@ -65,6 +65,5 @@ Using **Tkinter library** we have created a simple _GUI_ window.
 - [Varun S Duddu](https://github.com/penguinacorn/)
 - [Vishal S Hegde](https://github.com/zeta-bot/)
 
-© HMR INTERNATIONAL SCHOOL
 
 ---
