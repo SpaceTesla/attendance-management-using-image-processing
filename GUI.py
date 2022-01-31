@@ -144,11 +144,44 @@ attach_xl_btn = Button(
 ).grid(row=0, column=2, padx=5, pady=5)
 
 
+# ------------------- Tesseract Part -------------------- #
+
+## Tesseract label 
+
+tes_text = StringVar()
+
+tes_label = Label(            # Following the same procedure as earlier
+    frame1,
+    textvariable=tes_text,
+    font=("JetBrains Mono", 20),
+    bd=3,
+    relief=SUNKEN,
+    anchor= E,
+    width=40,
+)
+
+
+## Tesseract Function
+
+def tess_fn():
+    global tes_path
+    tes_path = filedialog.askopenfilename(
+        filetypes=(
+            ("windows executable", "*.exe"),
+        )
+    )
+    tes_text.set(tes_path)
+    tes_label.grid(row=6, column=2, padx=5, pady=5)
+
+
+## Tesserect Button
+
 tes_btn = Button(
     frame1,
-    text = "Paste Tesseract Path",
+    text = "Attach Tesseract Path",
     font = ("JetBrains Mono", 20,),
     width=39,
+    command = tess_fn
 
 ).grid(row=5, column=2, padx=5, pady=5)
 
@@ -165,6 +198,8 @@ frame2.pack(padx=5, pady=5)
 def help_fun():         # To be used with @help_btn below
     github_link = "https://github.com/SpaceTesla/attendance-management-using-image-processing"
     webbrowser.open_new_tab(github_link)
+
+
 ## Help button
 
 help_btn = Button(frame2, text="Help", command= help_fun)
