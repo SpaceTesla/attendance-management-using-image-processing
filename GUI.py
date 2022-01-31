@@ -131,6 +131,12 @@ def attach_xl_fn():     # To be used with the button below
     )
     xl_text.set(xl_path)
     xl_label.grid(row=1, column=2, padx=5, pady=5)
+    # if no file selected
+    if len(xl_path) <= 2:    
+        xl_text.set("No file selected")     # Displays no file selected if so
+        xl_label.config(
+            font=("JetBrains Mono", 20, "italic"), fg="red")
+
 
 
 ## Excel button
@@ -172,6 +178,11 @@ def tess_fn():
     )
     tes_text.set(tes_path)
     tes_label.grid(row=6, column=2, padx=5, pady=5)
+    # if no file selected
+    if len(tes_path) <= 2:    
+        tes_text.set("No file selected")     # Displays no file selected if so
+        tes_label.config(
+            font=("JetBrains Mono", 20, "italic"), fg="red")
 
 
 ## Tesserect Button
