@@ -144,6 +144,13 @@ attach_xl_btn = Button(
 ).grid(row=0, column=2, padx=5, pady=5)
 
 
+tes_btn = Button(
+    frame1,
+    text = "Paste Tesseract Path",
+    font = ("JetBrains Mono", 20,),
+    width=39,
+
+).grid(row=5, column=2, padx=5, pady=5)
 
 
 # ----------------- Help & Exit Button ------------------ #
