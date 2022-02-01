@@ -200,7 +200,7 @@ root.mainloop()         # Main loop loops throughout the process until you close
 
 ## Image text file
 
-f1 = open("texts/image_paths.txt","w")
+f1 = open("text/image_paths.txt","w")
 f1.write(str(image_path_list))
 f1.close()
 
@@ -208,7 +208,7 @@ f1.close()
 ## Excel text file
 
 try:                    # If xl_path is not defined we will get an error
-    f2 = open("texts/excel_paths.txt","w")
+    f2 = open("text/excel_paths.txt","w")
     f2.write(str(xl_path))
     f2.close()
     
