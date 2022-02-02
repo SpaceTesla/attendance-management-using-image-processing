@@ -54,7 +54,7 @@ Using **Tkinter library** we have created a simple _GUI_ window.
 <Summary> GUI window </Summary>
   
   
-![Image](ocr.gif)
+![Image](images/ocr.gif)
 
 </Details>
 
