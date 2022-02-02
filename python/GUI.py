@@ -131,6 +131,12 @@ def attach_xl_fn():     # To be used with the button below
     )
     xl_text.set(xl_path)
     xl_label.grid(row=1, column=2, padx=5, pady=5)
+    # if no file selected
+    if len(xl_path) <= 2:    
+        xl_text.set("No file selected")     # Displays no file selected if so
+        xl_label.config(
+            font=("JetBrains Mono", 20, "italic"), fg="red")
+
 
 
 ## Excel button
@@ -144,6 +150,51 @@ attach_xl_btn = Button(
 ).grid(row=0, column=2, padx=5, pady=5)
 
 
+# ------------------- Tesseract Part -------------------- #
+
+## Tesseract label 
+
+tes_text = StringVar()
+
+tes_label = Label(            # Following the same procedure as earlier
+    frame1,
+    textvariable=tes_text,
+    font=("JetBrains Mono", 20),
+    bd=3,
+    relief=SUNKEN,
+    anchor= E,
+    width=40,
+)
+
+
+## Tesseract Function
+
+def tess_fn():
+    global tes_path
+    tes_path = filedialog.askopenfilename(
+        filetypes=(
+            ("windows executable", "*.exe"),
+        )
+    )
+    tes_text.set(tes_path)
+    tes_label.grid(row=6, column=2, padx=5, pady=5)
+    # if no file selected
+    if len(tes_path) <= 2:    
+        tes_text.set("No file selected")     # Displays no file selected if so
+        tes_label.config(
+            font=("JetBrains Mono", 20, "italic"), fg="red")
+
+
+## Tesserect Button
+
+tes_btn = Button(
+    frame1,
+    text = "Attach Tesseract Path",
+    font = ("JetBrains Mono", 20,),
+    width=39,
+    command = tess_fn
+
+).grid(row=5, column=2, padx=5, pady=5)
 
 
 # ----------------- Help & Exit Button ------------------ #
@@ -158,6 +209,8 @@ frame2.pack(padx=5, pady=5)
 def help_fun():         # To be used with @help_btn below
     github_link = "https://github.com/SpaceTesla/attendance-management-using-image-processing"
     webbrowser.open_new_tab(github_link)
+
+
 ## Help button
 
 help_btn = Button(frame2, text="Help", command= help_fun)
@@ -200,7 +253,7 @@ root.mainloop()         # Main loop loops throughout the process until you close
 
 ## Image text file
 
-f1 = open("text/image_paths.txt","w")
+f1 = open("image_paths.txt","w")
 f1.write(str(image_path_list))
 f1.close()
 
@@ -208,7 +261,7 @@ f1.close()
 ## Excel text file
 
 try:                    # If xl_path is not defined we will get an error
-    f2 = open("text/excel_paths.txt","w")
+    f2 = open("excel_paths.txt","w")
     f2.write(str(xl_path))
     f2.close()
     
