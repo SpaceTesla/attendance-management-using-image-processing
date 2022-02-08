@@ -23,14 +23,14 @@ Make sure you have the following extension installed
 
 |  SN   | Extensions    | Installation Code         |
 | :---: | ------------- | ------------------------- |
-|  1)   | _Tkinter_     | `pip install tk`          |
-|  1)   | _Pytesseract_ | `pip install pytesseract` |
-|  1)   | _Pillow_      | `pip install Pillow`.     |
-|  1)   | _Openpyxl_    | `pip install openpyxl`    |
+|  1.   | _Tkinter_     | `pip install tk`          |
+|  2.   | _Pytesseract_ | `pip install pytesseract` |
+|  3.   | _Pillow_      | `pip install Pillow`      |
+|  4.   | _Openpyxl_    | `pip install openpyxl`    |
 
 > **Note:**
 >
-> You can also use `pip3` instead of `pip`.
+> You can also use `pip3` instead of `pip`
 >
 > For ex: `pip3 install tkinter`
 
