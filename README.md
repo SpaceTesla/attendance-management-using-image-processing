@@ -23,13 +23,13 @@ Make sure you have the following extension installed
 
 |  SN   | Extensions    | Installation Code         |
 | :---: | ------------- | ------------------------- |
-|  1.   | _Tkinter_     | `pip install tkinter`     |
+|  1.   | _Tkinter_     | `pip install tk`          |
 |  2.   | _Pytesseract_ | `pip install pytesseract` |
 |  3.   | _Openpyxl_    | `pip install openpyxl`    |
 
 > **Note:**
 >
-> For linux or mac os use `pip3` instead of `pip`.
+> You can also use `pip3` instead of `pip`.
 >
 > For ex: `pip3 install tkinter`
 
