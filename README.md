@@ -23,9 +23,10 @@ Make sure you have the following extension installed
 
 |  SN   | Extensions    | Installation Code         |
 | :---: | ------------- | ------------------------- |
-|  1.   | _Tkinter_     | `pip install tk`          |
-|  2.   | _Pytesseract_ | `pip install pytesseract` |
-|  3.   | _Openpyxl_    | `pip install openpyxl`    |
+|  1)   | _Tkinter_     | `pip install tk`          |
+|  1)   | _Pytesseract_ | `pip install pytesseract` |
+|  1)   | _Pillow_      | `pip install Pillow`.     |
+|  1)   | _Openpyxl_    | `pip install openpyxl`    |
 
 > **Note:**
 >
