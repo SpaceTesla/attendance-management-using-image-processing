@@ -1,7 +1,7 @@
 from PIL import Image, ImageEnhance
 import pytesseract as tess
 import matplotlib.pyplot as plt
-import numpy as np
+
 tess.pytesseract.tesseract_cmd = r"C:\Users\Meghana\AppData\Local\Programs\Tesseract-OCR\tesseract"
 fh = open("text/image_paths.txt")
 image_path_list = eval(fh.read())
