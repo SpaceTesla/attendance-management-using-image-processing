@@ -6,6 +6,7 @@ tess.pytesseract.tesseract_cmd = r"C:\Users\Meghana\AppData\Local\Programs\Tesse
 fh = open("text/image_paths.txt")
 image_path_list = eval(fh.read())
 print(image_path_list)
+len_list = len(image_path_list)
 for i in image_path_list:
     image = Image.open(i)
 #image.show()#this opens photo viewer
@@ -27,7 +28,7 @@ for i in image_path_list:
     transpose_image5 = image.transpose(Image.ROTATE_270)
     transpose_image6 = image.transpose (Image.TRANSPOSE)
 #viewing all different image orientations
-    '''plt. figure(figsize=(10,10))
+    plt. figure(figsize=(10,10))
     plt.subplot(3,2,1)
     plt.imshow(transpose_image1)
     plt.title("FLIP_LEFT_RIGHT")
@@ -47,40 +48,41 @@ for i in image_path_list:
     plt.title("ROTATE_270")
     plt.subplot(3,2,6)
     plt.imshow(transpose_image6)
-    plt.title("TRANSPOSE")'''
+    plt.title("TRANSPOSE")
 
     
-    text = tess.image_to_string(transpose_image1)
-    fh = open("text.1.txt","w+")
-    fh.write(text)
-    #print(text)
-    
-    text = tess.image_to_string(transpose_image2)
-    fh = open("text.2.txt","w+")
-    fh.write(text)
-    print(text)
-    
-    text = tess.image_to_string(transpose_image3)
-    fh = open("text.3.txt","w+")
-    fh.write(text)
-    print(text)
-    
-    text = tess.image_to_string(transpose_image4)
-    fh = open("text.4.txt","w+")
-    fh.write(text)
-    print(text)
-    
-    text = tess.image_to_string(transpose_image5)
-    fh = open("text.5.txt","w+")
-    fh.write(text)
-    print(text)
-    
-    text = tess.image_to_string(transpose_image6)
-    fh = open("text.6.txt","w+")
-    fh.write(text)
-    print(text)
-    
-    text = tess.image_to_string(image)
-    fh = open("text.7.txt","w+")
-    fh.write(text)
-    print(text)
+    for j in range(1,len_list+1):
+        text = tess.image_to_string(transpose_image1)
+        fh = open("text."+str(j)+".1.txt","w+")
+        fh.write(text)
+        #print(text)
+        
+        text = tess.image_to_string(transpose_image2)
+        fh = open("text."+str(j)+".2.txt","w+")
+        fh.write(text)
+        print(text)
+        
+        text = tess.image_to_string(transpose_image3)
+        fh = open("text."+str(j)+".3.txt","w+")
+        fh.write(text)
+        print(text)
+        
+        text = tess.image_to_string(transpose_image4)
+        fh = open("text."+str(j)+".4.txt","w+")
+        fh.write(text)
+        print(text)
+        
+        text = tess.image_to_string(transpose_image5)
+        fh = open("text."+str(j)+".5.txt","w+")
+        fh.write(text)
+        print(text)
+        
+        text = tess.image_to_string(transpose_image6)
+        fh = open("text."+str(j)+".6.txt","w+")
+        fh.write(text)
+        print(text)
+        
+        text = tess.image_to_string(image)
+        fh = open("text."+str(j)+".7.txt","w+")
+        fh.write(text)
+        print(text)
