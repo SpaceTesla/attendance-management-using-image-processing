@@ -30,7 +30,7 @@ for i in range(1,6):
         try:
             globals() [f'text.{i}.{j}'] = open(f'text.{i}.{j}.txt', 'r')
             globals() [f'var{i}.{j}'] = (globals() [f'text.{i}.{j}']).read()
-            print(globals() [f'var{i}.{j}'])
+            l.append(globals() [f'var{i}.{j}'])
         except FileNotFoundError:
             pass
 print("no errors")
