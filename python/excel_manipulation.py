@@ -46,7 +46,7 @@ for i in range(max_rows):
     element = ws["A" + str(col)].value  # A1 A2 A3 .....
 
     if element != None:
-        if element in data_str:        # presert condition
+        if element.lower() in data_str.lower():        # presert condition
             ws["B" + str(col)] = "P"
             ws["B" + str(col)].fill = PatternFill("solid", fgColor="71FF33")
 
