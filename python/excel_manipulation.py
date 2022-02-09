@@ -26,7 +26,7 @@ l=[]
 i = 1
 j=1
 for i in range(1,6):
-    for j in range (1,7):
+    for j in range (1,8):
         try:
             globals() [f'text.{i}.{j}'] = open(f'text.{i}.{j}.txt', 'r')
             globals() [f'var{i}.{j}'] = (globals() [f'text.{i}.{j}']).read()
