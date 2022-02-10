@@ -268,4 +268,16 @@ try:                    # If xl_path is not defined we will get an error
 except NameError:       # Case arises when we don't attach any excel file and close the window
     pass
 
+
+## Tesseract text file
+
+try:
+    f2 = open("text/tess_paths.txt","w")
+    f2.write(str(tes_path))
+    f2.close()
+    
+except NameError:
+    pass
+
+
 # ------------------------- EOF ------------------------- #
