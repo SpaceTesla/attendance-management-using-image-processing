@@ -2,22 +2,14 @@
 
 - [ATTENDANCE MANAGEMENT USING IMAGE PROCESSING](#attendance-management-using-image-processing)
   - [File structure](#file-structure)
-  - [Extensions](#extensions)
-  - [Other Requirements](#other-requirements)
+  - [Extensions and requirments](#extensions-and-requirments)
   - [GUI](#gui)
   - [Developed by](#developed-by)
 
-## File structure
-
-- [x] File dialog box and **GUI** _@SpaceTesla_
-
-- [ ] **Image OCR** & processing  _@zeta-bot_
-
-- [ ] Writing & updating **Excel** file _@penguinacorn_
 
 ---
 
-## Extensions
+## Extensions and requirments
 
 Make sure you have the following extension installed
 
@@ -34,13 +26,10 @@ Make sure you have the following extension installed
 >
 > For ex: `pip3 install tkinter`
 
----
 
-## Other Requirements
+We also need [Google Tesseract ocr engine](https://github.com/tesseract-ocr/tesseract) for our program to work
 
-[Google Tesseract ocr engine](https://github.com/tesseract-ocr/tesseract)
-
-[Latest Python Version](https://www.python.org/downloads/)
+It is also suggest to install the [Latest Python Version](https://www.python.org/downloads/)
 
 ---
 
