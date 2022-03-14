@@ -21,7 +21,7 @@ wb = load_workbook(f_path)
 
 Date = date.today()               # To fetch today's date
 
-   
+
 ws = wb.active           # To choose an active worksheet   
 ws.title = str(Date)           # To rename the sheet to the date
 
@@ -43,7 +43,7 @@ for i in range(1,6):
             pass
 
 print()
-print("no errors")
+print("no errors")  # To check if any error exists
 print()
 
 for i in l:
