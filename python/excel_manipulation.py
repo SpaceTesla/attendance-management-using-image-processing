@@ -35,7 +35,8 @@ j=1
 for i in range(1,6):
     for j in range (1,8):
         try:
-            globals() [f'text.{i}.{j}'] = open(f'text.{i}.{j}.txt', 'r')          #TEXT FILE HAVING NAMES OF ALL STUDENTS
+            #TEXT FILE HAVING NAMES OF ALL STUDENTS
+            globals() [f'text.{i}.{j}'] = open(f'text.{i}.{j}.txt', 'r')     
             globals() [f'var{i}.{j}'] = (globals() [f'text.{i}.{j}']).read()
             l.append(globals() [f'var{i}.{j}'])
         except FileNotFoundError:
@@ -48,7 +49,7 @@ print()
 for i in l:
     data_str += i
 
-#----------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------
 max_rows = ws.max_row
 
    #to traverse the rows in the excel file
@@ -63,7 +64,7 @@ for i in range(max_rows):
             ws["B" + str(col)].fill = PatternFill("solid", fgColor="71FF33")    
 
         
-      else:                          # Abscent condition
+        else:                          # Abscent condition
             ws["B" + str(col)] = "A"   
             # To mark absentees with the colour red
             ws["B" + str(col)].fill = PatternFill("solid", fgColor="F50707")      
