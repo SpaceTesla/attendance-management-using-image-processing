@@ -101,6 +101,9 @@ for i in image_path_list:
     #be processed by tesseract after which output obtained is converted into 7 textfiles(for each image),
     #1 textfile for 1 particular orientation.  
     
+
+    # naming of textfiles will be ---- image 1 --->text.1.1.txt,txt.2.1.txt,text,3.1.txt.....
+    #                                  image 2 --->text.1.2.txt,txt.2.2.txt,text,3.2.txt..... and so on
     for j in range(1,len_list+1):
         text = tess.image_to_string(transpose_image1)
         fh = open("text."+str(j)+".1.txt","w+")   
