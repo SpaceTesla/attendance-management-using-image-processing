@@ -1,4 +1,4 @@
-#importing modules necessary for image processing and ocr
+# ------------------ Imports ------------------ #
 
 #qualitative enhancement of image to enable better results with ocr
 from PIL import Image, ImageEnhance
